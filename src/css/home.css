@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+:root{
+    --background: #F6E7D8; /* main-layoutの土台 */
+    --card: #FFFDF8;       /* 左のレシピ一覧エリア */
+    --card-sub: #FFF4E6;      /* 右の検索・献立・タグのカード */
+    --brown: #8B5E3C;      /* ヘッダー、文字、ボタン */
+    --accent: #E89B4D;     /* 目立たせたいボタンやタグ */
+    --text: #4A3325;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f7f7f7;
+}
+
+/* ヘッダー部分 */
+#home-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    height: 10vh;
+    padding: 0 16px;
+    background: linear-gradient(90deg, #8B5E3C, #A47148);
+}
+#icon{
+    width: 80px;
+    height : 80px;
+    object-fit: contain;
+}
+h1{
+    margin: 0;
+    color: #FFF8F0;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+.main-layout{
+    display: flex;
+    flex-direction: row; /* 横分割(初期値) */
+    gap: 20px; /* 余白 */
+    height: 90vh;
+    padding: 20px;
+    background-color: #F6E7D8;
+}
+
+/* 料理テーブル部分*/
+.table-area{
+    flex: 3;
+    background-color: var(--card);
+    box-shadow: 0 4px 12px rgba(95, 41, 8, 0.758);
+    border-radius: 16px;
+}
+
+/* 機能表示部分 */
+.function-area{
+    display: flex;
+    flex-direction: column; /* 縦分割 */
+    gap: 20px;
+    flex: 1;
+    background-color: transparent;
+    min-width: 350px;
+}
+.sub-area{
+    padding: 16px; 
+    flex: 2;
+    background-color: var(--card-sub);
+    box-shadow: 0 4px 12px rgba(95, 41, 8, 0.758);
+    border-radius: 16px;
+}
+.sub-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.icon-images{
+    height: 70px;
+    width: 70px;
+    object-fit: contain;
+}
+.icon-text{
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--brown);
+}
+
+/* キーワード検索エリア */
+#search-area{
+    flex: 2;
+}
+.search-form {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* 献立表示エリア */
+#menu-area{
+    flex: 4;
+}
+/* タグ表示エリア */
+#tags-area{
+    flex: 4;
+}
+
+#text-box{
+    height: 40px;
+    width:  250px; 
+    font-size: 20px;
+}
+#search{
+    height: 40px;
+    width: 30px;
+    background-color:  var(--card-sub);
+}
