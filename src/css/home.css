@@ -55,6 +55,21 @@ h1{
     background-color: var(--card);
     box-shadow: 0 4px 12px rgba(95, 41, 8, 0.16);
     border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+.table-area::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-image: url("../images/One-Week_Cafeteria.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    opacity: 0.38;
 }
 
 /* 機能表示部分 */
@@ -100,6 +115,17 @@ h1{
     align-items: center;
     gap: 8px;
 }
+#text-box{
+    height: 40px;
+    width:  250px; 
+    font-size: 20px;
+}
+#search{
+    height: 40px;
+    width: 30px;
+    background-color:  var(--card-sub);
+}
+
 
 /* 献立表示エリア */
 #menu-area{
@@ -193,15 +219,4 @@ h1{
     margin-top: auto;
     align-self: flex-end;
     cursor: pointer;
-}
-
-#text-box{
-    height: 40px;
-    width:  250px; 
-    font-size: 20px;
-}
-#search{
-    height: 40px;
-    width: 30px;
-    background-color:  var(--card-sub);
 }
