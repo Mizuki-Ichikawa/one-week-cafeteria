@@ -8,12 +8,13 @@
     --brown: #8B5E3C;      /* ヘッダー、文字、ボタン */
     --accent: #E89B4D;     /* 目立たせたいボタンやタグ */
     --text: #4A3325;
+    --text2: #FFF8F0;
 }
 
 body {
     margin: 0;
     font-family: sans-serif;
-    background-color: #f7f7f7;
+    background-color: var(--background);
 }
 
 /* ヘッダー部分 */
@@ -33,7 +34,7 @@ body {
 }
 h1{
     margin: 0;
-    color: #FFF8F0;
+    color: var(--text2);
     font-size: 32px;
     font-weight: 700;
     letter-spacing: 0.08em;
@@ -52,7 +53,7 @@ h1{
 .table-area{
     flex: 3;
     background-color: var(--card);
-    box-shadow: 0 4px 12px rgba(95, 41, 8, 0.758);
+    box-shadow: 0 4px 12px rgba(95, 41, 8, 0.16);
     border-radius: 16px;
 }
 
@@ -66,20 +67,22 @@ h1{
     min-width: 350px;
 }
 .sub-area{
-    padding: 16px; 
+    padding: 18px; 
     flex: 2;
     background-color: var(--card-sub);
-    box-shadow: 0 4px 12px rgba(95, 41, 8, 0.758);
-    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(95, 41, 8, 0.16);
+    border-radius: 18px;
 }
 .sub-header{
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
 }
 .icon-images{
-    height: 70px;
-    width: 70px;
+    height: 58px;
+    width: 58px;
     object-fit: contain;
 }
 .icon-text{
@@ -101,6 +104,66 @@ h1{
 /* 献立表示エリア */
 #menu-area{
     flex: 4;
+    display: flex;
+    flex-direction: column;
+}
+#menu-contents{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+#menu-table{
+    flex: 1;
+    width: 100%;
+    border-collapse: collapse;
+    color: var(--text);
+
+}
+#menu-table td{
+    padding: 9px 6px;
+    vertical-align: middle;
+}    
+#table-title{
+    font-weight: bold;
+    color:  var(--brown);
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+    text-decoration-thickness: 3px;
+    text-underline-offset: 5px;
+
+}
+.day-change,.add-menu{
+    width: 28px;
+    height: 28px;
+    border: 1px solid rgba(139, 94, 60, 0.35);
+    border-radius: 8px;
+    background-color: var(--card);
+    color: var(--brown);
+    font-weight: bold;
+    cursor: pointer;
+}
+.recipe-area td{
+    border-bottom: 1.5px solid var(--accent);
+}
+.day{
+    width: 48px;
+    color: var(--brown);
+    font-weight: bold;
+}
+#menu-button{
+    height: 54px;
+    flex: 0 0 54px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 15px;
+    color: var(--text2);
+    border-radius: 12px;
+    border: none;
+    background-color: var(--brown);
+    cursor: pointer;
+    
 }
 /* タグ表示エリア */
 #tags-area{
