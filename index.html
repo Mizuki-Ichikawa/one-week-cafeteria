@@ -1,108 +1,13 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="src\css\home.css">
-    </head>
-    <body onload="init()">
-        <header id="home-header">
-            <img id="icon" src="src\images\One-Week_Cafeteria.png">
-            <h1>一週間食堂</h1>
-        </header>
-
-        <div class="main-layout">
-            <!-- 画面左側：献立表示部分 -->
-            <div class="recipe-grid-area">
-                <header class="table-header">
-                    <span id="grid-title">今日のレシピ</span>
-                    <span class="recipe-count">全<span id="recipe-size">6</span>レシピ</span>
-                </header>
-                <div class="recipe-grid">
-                    <!-- レシピサンプル6種 jsファイル作成後は置き換える -->
-                    <div class="thumbnail">
-                        <div class="top-area">
-                            <img src="">
-                        </div>
-                        <div class="buttom-area"></div>
-                    </div>
-                    <div class="thumbnail"></div>
-                    <div class="thumbnail"></div>
-                    <div class="thumbnail"></div>
-                    <div class="thumbnail"></div>
-                    <div class="thumbnail"></div>
-                </div>
-                <div></div>
-                
-            </div>
-
-            <!-- 画面右側：機能表示部分 -->
-            <div class="function-area">
-                <!-- 上段 : 検索部分 -->
-                <div class="sub-area" id="search-area">
-                    <header class="sub-header">
-                        <img class="icon-images" src="src\images\search-icon.png">
-                        <span class="icon-text">キーワードから探す</span><br>
-                    </header>
-                    <div class="search-form">
-                        <input id="text-box" type="text" placeholder="料理名・食材・目的を入力">
-                        <button id="search">🔍</button>
-                    </div>
-                    <span id="search-example">例：ダイエット, 玉ねぎ, 10分でできる</span>
-                </div>
-
-                <!-- 画面中段 : 献立表示部分 -->
-                <div class="sub-area" id="menu-area">
-                    <div class="sub-header">
-                        <img class="icon-images" src="src\images\table-icon.png">
-                        <span class="icon-text">献立</span>
-                    </div>
-                    <div id="menu-contents">
-                        <table id="menu-table">
-                            <tr>
-                                <td><button class="day-change" id="yesterday">◀</button></td>
-                                <td id="table-title">今日の献立</td>
-                                <td><button class="day-change" id="tomorrow">▶</button></td>
-                            </tr>
-                            <tr class="recipe-area">
-                                <td class="day">朝</td>
-                                <td>未登録</td>
-                                <td><button class="add-menu">+</button></td>
-                            </tr>
-                            <tr class="recipe-area">
-                                <td class="day">昼</td>
-                                <td>未登録</td>
-                                <td><button class="add-menu">+</button></td>
-                            </tr>
-                            <tr class="recipe-area">
-                                <td class="day">夜</td>
-                                <td>未登録</td>
-                                <td><button class="add-menu">+</button></td>
-                            </tr>
-                        </table>
-                        <button id="menu-button">献立を作る</button>
-                    </div>
-                </div>
-
-                <!-- 画面下段 : タグ表示部分 -->
-                <div class="sub-area" id="tags-area">
-                    <div class="sub-header">
-                        <img class="icon-images" src="src\images\tag-icon.png">
-                        <span class="icon-text">人気のタグ</span>
-                    </div>
-                    <div class="tag-area-contents">
-                        <div class="tag-list">
-                            <!-- jsができるまでのサンプル-->
-                             <button class="tag-chip">#高たんぱく</button>
-                             <button class="tag-chip">#ダイエット</button>
-                             <button class="tag-chip">#節約</button>
-                             <button class="tag-chip">#15分以内</button>
-                             <button class="tag-chip">#作り置き</button>
-                             <button class="tag-chip">#丼もの</button>
-                        </div>
-                        <a class="tag-more">タグをもっと見る ›</a>
-                    </div>
-                </div>
-            </div>
-        </div> 
-    </body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>recipesite</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>

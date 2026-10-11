@@ -1,0 +1,11 @@
+/* カラーパレット */
+@theme {
+    --color-main: #7c4a2d; /* メインカラー */ 
+    --color-background: #fff4e6; /* 背景色 */
+    --color-card-background: #fffcf7; /* レシピカード背景 */
+    --color-accent: #f69552; /* アクセントカラー */
+    --color-sub: #c6a477; /* サブカラー */
+    --color-primary-text: #4a2e1f; /* テキストカラー */
+    --color-header-text: #FFF8F0; /* ヘッダ用テキスト*/
+    --color-secondary-text: #8f7a6a; /* 補助文字カラー */
+}
