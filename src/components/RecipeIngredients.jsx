@@ -27,9 +27,9 @@ const RecipeIngredients = ({recipe}) => {
     })
     
     return (
-        <div className="border border-sub rounded-lg px-3 py-2 shadow">
+        <div className="border border-sub bg-card-background rounded-lg px-3 py-2 shadow">
             <h2 className="text-xl text-primary-text font-semibold"> 材料 {recipe.baseServings}人前</h2>
-            <span className="block border-t border-sub my-2" aria-hidden="true" />
+            <span className="block border-t border-sub my-2" aria-hidden="true text-description-text" />
             <div>
                 {ingredients}
             </div>

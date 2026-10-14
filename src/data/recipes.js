@@ -4,7 +4,7 @@ export const recipes = [
     {
         id: 1,
         title: "トマトと卵の炒め物",
-        image: "src/assets/images/main-dish-meat.png",
+        image: "/src/assets/images/main-dish-meat.png",
         description: "トマトの酸味と卵のまろやかさを楽しめる、手軽な炒め物です。",
         cookingTime: 10,
         baseServings: 1,
