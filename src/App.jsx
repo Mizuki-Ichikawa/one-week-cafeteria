@@ -1,8 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router";
-//import { useParams } from "react-router";
 
 import TopPage from "./pages/TopPage";
 import RecipeDetailPage from "./pages/RecipeDetailPage";
+import MealPlanPage from "./pages/MealPlanPage";
+import NutritionPage from "./pages/NutritionPage";
 
 function App(){
   return(
@@ -17,6 +18,14 @@ function App(){
           <Route path="/recipe/:recipeId"
                  element={<RecipeDetailPage/>}
             />
+          
+          <Route path="meal-plan"
+                 element={<MealPlanPage/>}
+          />
+
+          <Route path="/recipe/:recipeId/nutrition"
+                 element={<NutritionPage/>}
+          />
         </Routes>
 
       </div>
