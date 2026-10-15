@@ -5,7 +5,7 @@ const MovePage = ({link, text}) => {
     return (
         <div>
             <Link to={link}
-               className="text-sm text-secondary-text underline ">
+               className="text-sm text-text-gray-brown underline ">
                 {text}
             </Link>
         </div>

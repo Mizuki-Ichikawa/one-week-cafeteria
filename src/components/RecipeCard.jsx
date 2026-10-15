@@ -12,7 +12,7 @@ const RecipeCard = ({ recipe }) => {
     return (
         <Link to={`/recipe/${ recipe.id }`}>
             <article className="flex flex-col h-full min-h-0 overflow-hidden rounded-xl
-                           bg-card-background p-2 shadow-md">
+                           bg-bg-ivory p-2 shadow-md">
                 <div className="min-h-0 flex-1">
                     <img
                         src={recipe.image}
@@ -22,11 +22,11 @@ const RecipeCard = ({ recipe }) => {
                 </div>
 
                 <div className="shrink-0 p-2">
-                    <h2 className="text-base font-bold text-primary-text">
+                    <h2 className="text-base font-bold text-text-warm-brown">
                         {recipe.title}
                     </h2>
 
-                    <div className="mt-1 flex flex-wrap items-center gap-1 text-xs text-secondary-text">
+                    <div className="mt-1 flex flex-wrap items-center gap-1 text-xs text-text-gray-brown">
                         <p className="flex items-center">
                             <span aria-hidden="true">◷</span>
                             {recipe.cookingTime}分

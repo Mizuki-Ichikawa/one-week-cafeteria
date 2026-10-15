@@ -18,8 +18,8 @@ const RecipeGrid = () => {
             </div>
             <div className="mt-4 flex shrink-0 justify-center">
                 <button type="button" 
-                        className="bg-main text-header-text p-2 rounded-md shadow-xl 
-                                   cursor-pointer transition-colors hover:bg-accent"
+                        className="bg-bg-brown text-text-warm-white p-2 rounded-md shadow-xl 
+                                   cursor-pointer transition-colors hover:bg-bg-orange"
                 >
                     もっと見る ＞
                 </button>

@@ -1,24 +1,15 @@
 /* カラーパレット */
 @theme {
-    --color-main: #7c4a2d; /* メインカラー */ 
-    --color-background: #fff4e6; /* 背景色 */
-    --color-card-background: #fffcf7; /* レシピカード背景 */
-    --color-accent: #f69552; /* アクセントカラー */
-    --color-sub: #c6a477; /* サブカラー */
-    --color-primary-text: #4a2e1f; /* テキストカラー */
-    --color-header-text: #FFF8F0; /* ヘッダ用テキスト*/
-    --color-secondary-text: #8f7a6a; /* 補助文字カラー */
-    --color-description-text: #654735;
-
-    /*
+    /* 背景色 */
     --color-bg-brown: #7c4a2d;
     --color-bg-cream: #fff4e6;
     --color-bg-ivory: #fffcf7;
     --color-bg-orange: #f69552;
-    --color-text-dark-brown: #4a2e1f;
+    /* テキスト色 */
+    --color-text-warm-brown: #7c4a2d;
     --color-text-gray-brown: #8f7a6a;
     --color-text-warm-white: #fff8f0;
     --color-text-brown: #654735;
+    /* 境界色 */
     --color-border-tan: #c6a477;
-    */
 }

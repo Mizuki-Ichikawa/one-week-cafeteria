@@ -6,7 +6,7 @@ import TagList from "../components/TagList"
 
 const TopPage = () => {
     return(
-        <div className="flex flex-col h-dvh bg-background font-sans">
+        <div className="flex flex-col h-dvh bg-bg-cream font-sans">
             <div className="shrink-0">
                 <Header/>
             </div>

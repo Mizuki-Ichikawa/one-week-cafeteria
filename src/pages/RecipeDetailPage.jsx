@@ -21,7 +21,7 @@ const RecipeDetailPage = ({}) => {
     }
     
     return (
-        <div className="min-h-dvh bg-background font-sans pb-10">
+        <div className="min-h-dvh bg-bg-cream font-sans pb-10">
             <div className="shrink-0">
                 <Header/>
             </div>

@@ -16,20 +16,20 @@ const RecipeIngredients = ({recipe}) => {
 
         return(
             <div key={index}>
-                <div className="flex justify-between items-center px-2 py-1">
+                <div className="flex justify-between items-center px-2 py-1 text-text-brown">
                     <span>{ingredient.name}</span>
                     <span>{amount}</span>
                 </div>
-                <span className="block border-t border-sub my-2"
+                <span className="block border-t border-border-tan my-2"
                 aria-hidden="true"></span>
             </div>
         )
     })
     
     return (
-        <div className="border border-sub bg-card-background rounded-lg px-3 py-2 shadow">
-            <h2 className="text-xl text-primary-text font-semibold"> 材料 {recipe.baseServings}人前</h2>
-            <span className="block border-t border-sub my-2" aria-hidden="true text-description-text" />
+        <div className="border border-border-tan bg-bg-ivory rounded-lg px-3 py-2 shadow">
+            <h2 className="text-xl text-text-warm-brown font-semibold"> 材料 {recipe.baseServings}人前</h2>
+            <span className="block border-t border-border-tan my-2" aria-hidden="true text-text-brown" />
             <div>
                 {ingredients}
             </div>

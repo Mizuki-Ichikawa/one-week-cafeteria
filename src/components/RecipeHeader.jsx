@@ -5,13 +5,13 @@ const RecipeHeader = ({recipe, className}) => {
     return (
         <header className={className}>
             <div className="flex items-center gap-10"> 
-                <h1 className="text-3xl text-primary-text font-bold">{recipeName}</h1>
+                <h1 className="text-3xl text-text-warm-brown font-bold">{recipeName}</h1>
 
                 <span
-                    className="h-6 w-px shrink-0 bg-sub"
+                    className="h-6 w-px shrink-0 bg-border-tan"
                     aria-hidden="true"
                 />
-                <span className="text-primary-text font-semibold">調理時間： {cookingTime}分</span>
+                <span className="text-text-warm-brown font-semibold">調理時間： {cookingTime}分</span>
             </div>
         </header>
     )
