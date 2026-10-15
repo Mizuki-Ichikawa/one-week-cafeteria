@@ -6,8 +6,6 @@ import Header from "../components/Header"
 import MovePage from "../components/MovePage"
 import RecipeHeader from "../components/RecipeHeader"
 import RecipeOverview from "../components/RecipeOverview"
-import RecipeDescription from "../components/RecipeDescription"
-import RecipeIngredients from "../components/RecipeIngredients"
 import RecipeSteps from "../components/RecipeSteps"
 
 const RecipeDetailPage = ({}) => {

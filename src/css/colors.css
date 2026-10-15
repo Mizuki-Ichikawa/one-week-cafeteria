@@ -8,5 +8,17 @@
     --color-primary-text: #4a2e1f; /* テキストカラー */
     --color-header-text: #FFF8F0; /* ヘッダ用テキスト*/
     --color-secondary-text: #8f7a6a; /* 補助文字カラー */
-    --color-description-text: #4a2e1f
+    --color-description-text: #654735;
+
+    /*
+    --color-bg-brown: #7c4a2d;
+    --color-bg-cream: #fff4e6;
+    --color-bg-ivory: #fffcf7;
+    --color-bg-orange: #f69552;
+    --color-text-dark-brown: #4a2e1f;
+    --color-text-gray-brown: #8f7a6a;
+    --color-text-warm-white: #fff8f0;
+    --color-text-brown: #654735;
+    --color-border-tan: #c6a477;
+    */
 }
