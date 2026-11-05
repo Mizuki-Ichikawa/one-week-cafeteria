@@ -7,14 +7,14 @@ const RecipeGrid = () => {
         <article className="flex h-full min-h-0 flex-col shadow-xl p-4">
             <div className="grid grid-cols-3 grid-rows-3 min-h-0 flex-1 gap-4">
                 <RecipeCard recipe={recipes[0]}/>
-                <RecipeCard recipe={recipes[0]}/>
-                <RecipeCard recipe={recipes[0]}/>
-                <RecipeCard recipe={recipes[0]}/>
-                <RecipeCard recipe={recipes[0]}/>
-                <RecipeCard recipe={recipes[0]}/>
-                <RecipeCard recipe={recipes[0]}/>
-                <RecipeCard recipe={recipes[0]}/>
-                <RecipeCard recipe={recipes[0]}/>
+                <RecipeCard recipe={recipes[1]}/>
+                <RecipeCard recipe={recipes[2]}/>
+                <RecipeCard recipe={recipes[3]}/>
+                <RecipeCard recipe={recipes[4]}/>
+                <RecipeCard recipe={recipes[5]}/>
+                <RecipeCard recipe={recipes[6]}/>
+                <RecipeCard recipe={recipes[7]}/>
+                <RecipeCard recipe={recipes[8]}/>
             </div>
             <div className="mt-4 flex shrink-0 justify-center">
                 <button type="button" 

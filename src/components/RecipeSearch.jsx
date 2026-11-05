@@ -7,7 +7,7 @@ const RecipeSearch = () => {
             <div className="inline-flex justify-start mt-3 bg-bg-ivory border border-border-tan rounded w-9/10">
                 <button
                     type="button"
-                    className="cursor-pointer transition-colors hover:bg-bg-brown"
+                    className="cursor-pointer transition-colors hover:bg-bg-orange"
                     
                 >
                     <img src={searchIcon}  className="h-7 w-7" />

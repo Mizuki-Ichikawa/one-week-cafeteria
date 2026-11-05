@@ -3,7 +3,7 @@ import MovePage from "./MovePage"
 const RecipeIngredients = ({recipe}) => {
     const ingredients = recipe.ingredients.map((ingredient, index) =>{
         {/* 単位によって表示順を変更する  */}
-        let amount 
+        let amount // 数値と単位の集合 ex.大さじ1 200g
         let isSpoon = ingredient.unit === "小さじ" || ingredient.unit === "大さじ"
 
         if(isSpoon){ // 大さじ、小さじの時　→ 単位 量 の順 
@@ -16,9 +16,9 @@ const RecipeIngredients = ({recipe}) => {
 
         return(
             <div key={index}>
-                <div className="flex justify-between items-center px-2 py-1 text-text-brown">
-                    <span>{ingredient.name}</span>
-                    <span>{amount}</span>
+                <div className="flex justify-between items-center gap-3 px-2 py-1 text-text-brown">
+                    <span className="min-w-0 wrap-break-word">{ingredient.name}</span>
+                    <span className="shrink-0 whitespace-nowrap">{amount}</span>
                 </div>
                 <span className="block border-t border-border-tan my-2"
                 aria-hidden="true"></span>
@@ -30,7 +30,7 @@ const RecipeIngredients = ({recipe}) => {
         <div className="border border-border-tan bg-bg-ivory rounded-lg px-3 py-2 shadow">
             <h2 className="text-xl text-text-warm-brown font-semibold"> 材料 {recipe.baseServings}人前</h2>
             <span className="block border-t border-border-tan my-2" aria-hidden="true text-text-brown" />
-            <div>
+            <div className="max-h-60 overflow-y-auto [scrollbar-color:#c6a477_transparent]">
                 {ingredients}
             </div>
             <div className="flex justify-end">
